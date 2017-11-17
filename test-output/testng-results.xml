@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2017-11-17T18:15:59Z" name="Default suite" finished-at="2017-11-17T18:16:38Z" duration-ms="39015">
+    <groups>
+    </groups>
+    <test started-at="2017-11-17T18:15:59Z" name="Default test" finished-at="2017-11-17T18:16:38Z" duration-ms="39015">
+      <class name="TestCases.TestCase_0001_OpenBrowserAndURL">
+        <test-method signature="OpenBrowser()[pri:0, instance:TestCases.TestCase_0001_OpenBrowserAndURL@13b6aecc]" started-at="2017-11-17T23:45:59Z" name="OpenBrowser" finished-at="2017-11-17T23:46:38Z" duration-ms="38960" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Tried to run command without establishing a connection
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:26.402Z'
+System info: host: 'DESKTOP-B2O7F6V', ip: '192.168.1.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\Sachin\AppData\Local\Temp\rust_mozprofile.T0rGUIfkuht9, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=10.0, moz:processID=7756, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
+Session ID: 627a84f7-54dd-4458-9753-f6b862564d10
+*** Element info: {Using=id, value=header_tab_holidays}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Tried to run command without establishing a connection
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:26.402Z'
+System info: host: 'DESKTOP-B2O7F6V', ip: '192.168.1.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\Sachin\AppData\Local\Temp\rust_mozprofile.T0rGUIfkuht9, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=10.0, moz:processID=7756, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
+Session ID: 627a84f7-54dd-4458-9753-f6b862564d10
+*** Element info: {Using=id, value=header_tab_holidays}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:402)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at Pages.HomePage.ClickOnHolidays(HomePage.java:23)
+	at Common.common.ClickOnHoliday(common.java:28)
+	at TestCases.TestCase_0001_OpenBrowserAndURL.OpenBrowser(TestCase_0001_OpenBrowserAndURL.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:877)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1201)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:776)
+	at org.testng.TestRunner.run(TestRunner.java:634)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:425)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:420)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:385)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:334)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1318)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1243)
+	at org.testng.TestNG.runSuites(TestNG.java:1161)
+	at org.testng.TestNG.run(TestNG.java:1129)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+      </class> <!-- TestCases.TestCase_0001_OpenBrowserAndURL -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
