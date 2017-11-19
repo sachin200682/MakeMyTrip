@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="TestCases.TestCase_0001_OpenBrowserAndURL">
+      <class name="TestCases.TC_0001_SearchFlights">
         <methods>
-          <include name="OpenBrowser"/>
+          <include name="searchflights"/>
         </methods>
-      </class> <!-- TestCases.TestCase_0001_OpenBrowserAndURL -->
+      </class> <!-- TestCases.TC_0001_SearchFlights -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
